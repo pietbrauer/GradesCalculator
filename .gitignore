@@ -1,0 +1,15 @@
+fastlane/test_output/
+fastlane/report.xml
+build/
+docs/
+*.pbxuser
+*.mode1v3
+*.perspectivev3
+.DS_Store
+.LSOverride
+.idea/
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.gcno
+
