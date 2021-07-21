@@ -8,26 +8,15 @@
 import XCTest
 @testable import GradeCalculator
 
-class GradeCalculatorTests: XCTestCase {
+final class GradeCalculatorTests: XCTestCase {
+    func testCalculation() {
+        // Alpe d'Huez https://www.strava.com/segments/4629741
+        XCTAssertEqual(CalculatorService.calculatePercentage(rise: 1048, length: 12.09), 8.690097)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Mont Ventoux https://www.strava.com/segments/10155434
+        XCTAssertEqual(CalculatorService.calculatePercentage(rise: 1519, length: 21.34), 7.130134)
+
+        // Box Hill Climb https://www.strava.com/segments/12744502
+        XCTAssertEqual(CalculatorService.calculatePercentage(rise: 136, length: 3.01), 4.52135)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

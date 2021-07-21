@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  GradeCalculator
+
+  Created by Piet Brauer-Kallenberg on 21.07.21.
+  
+*/
+
+"content.title" = "Grades Calculator";
+"content.rise.label" = "Rise (m)";
+"content.distance.label" = "Distance (km)";
+"content.grade.label" = "Grade";
